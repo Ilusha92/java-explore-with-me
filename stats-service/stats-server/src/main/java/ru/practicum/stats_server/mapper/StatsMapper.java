@@ -3,7 +3,6 @@ package ru.practicum.stats_server.mapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import ru.practicum.stats_common.model.EndpointHit;
-import ru.practicum.stats_server.model.Stats;
 
 import java.time.LocalDateTime;
 
