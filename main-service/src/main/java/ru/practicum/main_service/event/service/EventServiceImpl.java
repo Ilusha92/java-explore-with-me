@@ -291,7 +291,7 @@ public class EventServiceImpl implements EventService {
         }
 
         statsService.addHit(request);
-        event.setViews( ( event.getViews() == null ? 0 : event.getViews()) + 1);
+        event.setViews((event.getViews() == null ? 0 : event.getViews()) + 1);
         return toEventFullDto(event);
     }
 

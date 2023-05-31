@@ -35,8 +35,7 @@ public class UserServiceImpl implements UserService {
         }
         try {
             userDto = userMapper.toUserDto(userRepository.save(userMapper.toUser(newUserRequest)));
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
             throw new BadRequestException(e.getMessage());
         }
         return userDto;
