@@ -36,7 +36,7 @@ public class CompilationServiceImpl implements CompilationService {
         log.info("Создание новой подборки событий с параметрами {}", newCompilationDto);
 
         List<Event> events = new ArrayList<>();
-        if(newCompilationDto.getTitle().length()>50) {
+        if (newCompilationDto.getTitle().length() > 50) {
             throw new BadRequestException("more then 50 chars");
         }
         if (!newCompilationDto.getEvents().isEmpty()) {

@@ -29,7 +29,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Transactional
     public CategoryDto create(NewCategoryDto newCategoryDto) {
         log.info("Добавление новой категории {}", newCategoryDto);
-        if(newCategoryDto.getName().length()>50) {
+        if (newCategoryDto.getName().length() > 50) {
             throw new BadRequestException("more then 50 chars");
         }
         return categoryMapper.toCategoryDto(categoryRepository.save(categoryMapper.newCategoryDtoToCategory(newCategoryDto)));
@@ -42,7 +42,7 @@ public class CategoryServiceImpl implements CategoryService {
 
         categoryRepository.findById(catId)
                 .orElseThrow(() -> new NotFoundException("Категории с таким id не существует."));
-        if(categoryDto.getName().length()>50) {
+        if (categoryDto.getName().length() > 50) {
             throw new BadRequestException("more then 50 chars");
         }
         categoryDto.setId(catId);
