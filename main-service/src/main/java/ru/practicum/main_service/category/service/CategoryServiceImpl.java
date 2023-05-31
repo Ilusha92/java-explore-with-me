@@ -11,7 +11,6 @@ import ru.practicum.main_service.category.mapper.CategoryMapper;
 import ru.practicum.main_service.category.model.Category;
 import ru.practicum.main_service.category.repository.CategoryRepository;
 import ru.practicum.main_service.exception.BadRequestException;
-import ru.practicum.main_service.exception.ConflictException;
 import ru.practicum.main_service.exception.NotFoundException;
 
 import java.util.List;
