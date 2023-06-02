@@ -2,7 +2,6 @@ package ru.practicum.main_service.comment.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
-import lombok.experimental.FieldDefaults;
 import ru.practicum.main_service.MainCommonUtils;
 import ru.practicum.main_service.user.dto.UserShortDto;
 

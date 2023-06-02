@@ -1,7 +1,6 @@
 package ru.practicum.main_service.comment.dto;
 
 import lombok.*;
-import lombok.experimental.FieldDefaults;
 import ru.practicum.main_service.MainCommonUtils;
 
 import javax.validation.constraints.NotBlank;
