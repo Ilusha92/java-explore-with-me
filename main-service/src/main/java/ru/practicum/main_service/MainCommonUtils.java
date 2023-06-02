@@ -15,6 +15,6 @@ public class MainCommonUtils {
     public static final int MAX_LENGTH_TITLE = 120;
     public static final int MIN_LENGTH_UPDATE_TITLE = 3;
     public static final int MAX_LENGTH_UPDATE_TITLE = 50;
-//    public static final int MIN_LENGTH_COMMENT = 3;
-//    public static final int MAX_LENGTH_COMMENT = 7000;
+    public static final int MIN_LENGTH_COMMENT = 3;
+    public static final int MAX_LENGTH_COMMENT = 7000;
 }
